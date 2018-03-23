@@ -10,8 +10,8 @@ import java.io.IOException;
 //import java.util.List;
 public class CsvReader {
 
-    private static final String SAMPLE  = "C:\\1\\kapot.csv";//задаем константу пути к файлу
-    private static final String SAMPLE1 = "C:\\1\\automarshal.csv";
+    private static final String SAMPLE  = "//home//shurilla//mobizon.csv";//задаем константу пути к файлу
+   // private static final String SAMPLE1 = "C:\\1\\automarshal.csv";
 
     //char csvSplitby = ';';
     public static void main (String [] agrs)
@@ -19,8 +19,8 @@ public class CsvReader {
     {
          try {
              // Reader reader = Files.newBufferedReader(Paths.get(SAMPLE ));
-             CSVReader csvReader = new CSVReader(new FileReader(SAMPLE), ';');
-      CSVReader csvReader1 = new CSVReader(new FileReader(SAMPLE1),';');
+             CSVReader csvReader = new CSVReader(new FileReader(SAMPLE));
+     // CSVReader csvReader1 = new CSVReader(new FileReader(SAMPLE1),';');
              //
                    // System.out.println(csvReader.getLinesRead());
              //              )
@@ -31,10 +31,10 @@ public class CsvReader {
                               }
                                             //List<String[]> records = csvReader.readAll();
              //for (String[] record : records){
-String [] nextRecord1;
-             while ((nextRecord1 = csvReader1.readNext()) !=null) {
-                 System.out.println(nextRecord1[0]);
-             }
+//String [] nextRecord1;
+  //           while ((nextRecord1 = csvReader1.readNext()) !=null) {
+    //             System.out.println(nextRecord1[0]);
+      //       }
 
 
 
