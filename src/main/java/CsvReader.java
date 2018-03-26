@@ -11,7 +11,7 @@ import java.io.IOException;
 public class CsvReader {
 
     private static final String SAMPLE  = "//home//shurilla//mobizon.csv";//задаем константу пути к файлу
-   // private static final String SAMPLE1 = "C:\\1\\automarshal.csv";
+    private static final String SAMPLE1 = "//home//shurilla//mobizonlk1.csv";
 
     //char csvSplitby = ';';
     public static void main (String [] agrs)
@@ -19,22 +19,22 @@ public class CsvReader {
     {
          try {
              // Reader reader = Files.newBufferedReader(Paths.get(SAMPLE ));
-             CSVReader csvReader = new CSVReader(new FileReader(SAMPLE));
-     // CSVReader csvReader1 = new CSVReader(new FileReader(SAMPLE1),';');
+      CSVReader csvReader = new CSVReader(new FileReader(SAMPLE));
+      CSVReader csvReader1 = new CSVReader(new FileReader(SAMPLE1));
              //
                    // System.out.println(csvReader.getLinesRead());
              //              )
 
              String[] nextRecord;
              while ((nextRecord = csvReader.readNext()) != null) {
-                System.out.println("Артикул    " + nextRecord[0]);
-                              }
+              System.out.println("Телефон   " + nextRecord[3] + "  Статус  " + nextRecord [5]);
+                      }
                                             //List<String[]> records = csvReader.readAll();
              //for (String[] record : records){
-//String [] nextRecord1;
-  //           while ((nextRecord1 = csvReader1.readNext()) !=null) {
-    //             System.out.println(nextRecord1[0]);
-      //       }
+ String [] nextRecord1;
+             while ((nextRecord1 = csvReader1.readNext()) !=null) {
+                 System.out.println("Телефон " + nextRecord1[0] + " Статус " + nextRecord1[4]);
+             }
 
 
 
