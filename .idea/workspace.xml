@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9e418183-ef35-443d-8545-47f4b65f99a2" name="Default" comment="3">
+    <list default="true" id="9e418183-ef35-443d-8545-47f4b65f99a2" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CsvReader.java" afterPath="$PROJECT_DIR$/src/main/java/CsvReader.java" />
       <change beforePath="$PROJECT_DIR$/target/classes/CsvReader.class" afterPath="$PROJECT_DIR$/target/classes/CsvReader.class" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -350,7 +349,14 @@
       <option name="project" value="LOCAL" />
       <updated>1522084170328</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="3">
+      <created>1522147411277</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1522147411277</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
