@@ -59,7 +59,7 @@ public class CsvReader {
 
                         CSVWriter writer = new CSVWriter(new FileWriter(OUT));
                         writer.writeNext(mobiz1);
-                        writer.close();
+                        writer.flush();
                     }
 
          //            CSVWriter writer = new CSVWriter(new FileWriter(OUT));
