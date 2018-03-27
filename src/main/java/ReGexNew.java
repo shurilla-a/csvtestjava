@@ -5,7 +5,9 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 
-  public class ReGexNew {
+//import java.util.regex.Pattern.compile;
+
+public class ReGexNew {
 
      private static final String SAMPLE = "//home//shurilla//mobizon.csv";
      private static final String SAMPLE2 = "//home//shurilla//mobizonlk1.csv";
@@ -35,7 +37,13 @@ import java.util.ArrayList;
            }
            System.out.println("Размер Файла mobizon " + mobizonlk1.size() + " строк");
 
-           for (String[] mobiz2 : mobizon){
+           String pattern = "(\\d+)";
+
+           Pattern r = Pattern.compile(pattern);
+           Matcher m = r.matcher((CharSequence) mobizon);
+
+             for (String[] mobiz2 : mobizon){
+
 
            }
 
