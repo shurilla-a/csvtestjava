@@ -15,7 +15,7 @@ import java.util.Arrays;
 public class CsvReader {
 
     private static final String SAMPLE  = "//home//shurilla//mobizon.csv";//задаем константу пути к файлу
-    private static final String SAMPLE1 = "//home//shurilla//mobizonlk1.csv";
+    private static final String SAMPLE1 = "//home//shurilla//mobizonlk2.csv";
     private static final String OUT = "//home//shurilla//out.csv";
     //char csvSplitby = ';';
     public static void main (String [] agrs)
@@ -57,14 +57,14 @@ public class CsvReader {
                     if ((mobiz1[3].equals(mobiz2[0]) && (mobiz1[5].equals(mobiz2[4]))) ) {
                         System.out.println("Дата " + mobiz1[0] + " ID " + mobiz1[1] + " Номер " + mobiz1[3] + " Статус " + mobiz1[5] + " Дата и Время " + mobiz1[6]);
 
-                        CSVWriter writer = new CSVWriter(new FileWriter(OUT));
+                        CSVWriter writer = new CSVWriter(new FileWriter(OUT,true));
                         writer.writeNext(mobiz1);
-                        writer.flush();
+                         writer.flush();
                     }
 
-         //            CSVWriter writer = new CSVWriter(new FileWriter(OUT));
-           //          writer.writeNext(mobiz1);
-             //        writer.close();
+//                     CSVWriter writer = new CSVWriter(new FileWriter(OUT));
+//                     writer.writeNext(mobiz1);
+//                     writer.close();
 
                     //                 System.out.println("Дата " + mobiz1[0] + " ID " + mobiz1[1] + " Номер " + mobiz1[3] + " Статус " + mobiz1[5] + " Дата и Время " + mobiz1[6]);
 
@@ -72,7 +72,7 @@ public class CsvReader {
   ///               CSVWriter writer = new CSVWriter(new FileWriter(OUT));
      //            writer.writeNext(mobiz1);
        //          writer.close();
-                 // !!!!!!!!!!!!!!!! Задать вопрос Леха почему вывод здесь  !!!!!!!!!!!!!!!!!
+
                 }
 
                 progress++;
