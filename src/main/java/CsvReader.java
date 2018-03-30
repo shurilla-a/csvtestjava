@@ -47,13 +47,13 @@ public class CsvReader {
              for (String[] mobiz1 : mobizon) {
                 for (String[] mobiz2 : mobizonlk1) {
                     System.out.format("\r[%d/%d] ", progress, mobizon.size());
-                     //if ((mobiz1[4] == mobiz2[4]) && (mobiz1[5] == mobiz2[5])) {
+
                     if ((mobiz1[3].equals(mobiz2[0]) && (mobiz1[5].equals(mobiz2[4])) && (mobiz1[6].equals(mobiz2[1])) ) ) {
                         System.out.println("Дата " + mobiz1[0] + " ID " + mobiz1[1] + " Номер " + mobiz1[3] + " Статус " + mobiz1[5] + " Дата и Время " + mobiz1[6]);
 
                         CSVWriter writer = new CSVWriter(new FileWriter(OUT,true));
                         writer.writeNext(mobiz1);
-                         writer.flush();
+                        writer.flush();
                     }
 
 
